@@ -27,7 +27,7 @@ jobs:
         pyinstaller --noconsole --onedir --name="inventory-app" app.py
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: mac-app
         path: dist/inventory-app.app
